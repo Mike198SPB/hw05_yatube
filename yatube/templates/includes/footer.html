@@ -1,0 +1,8 @@
+<p>© {{ year }} Copyright <span style="color:red">Ya</span>tube</p>
+
+{#Вариант с тэгом {% now 'Y' %}, тоже работает, надо при этом отключить#}
+{#'core.context_processors.year.year' из settnigs.py#}
+{#Предлагаю оставить вывод текущего года через переменную из контекст-процессора,#}
+{#так как это требуется в описании финального задания#}
+
+{#<p>© {% now 'Y' %} Copyright <span style="color:red">Ya</span>tube</p>#}

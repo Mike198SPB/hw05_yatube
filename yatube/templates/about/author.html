@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Об авторе проекта{% endblock %}
+{% block content %}
+{% load static %}
+<style>
+  img {
+      max-width: 75%;
+      max-height: 75%;
+  }
+  h1 {
+      font-size: 50px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+  }
+  h2 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  p {
+      font-size: 16px;
+  }
+</style>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Всем привет, я Михаил Мартынов</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+      <p>Мне 36 лет и я учусь на backend-разработчика в Яндекс Практикуме</p>
+      <h2>Мои учебные IT проекты на GitHub</h2>
+      <p>
+        <a href="https://github.com/Mike198SPB/yatube_project.git">
+           Социальная сеть</a>
+      </p>
+      <p>
+        <a href="https://github.com/Mike198SPB/calc_and_win.git">
+           Рассчитай и победи</a>
+      </p>
+      <p>
+        <a href="https://github.com/Mike198SPB/hw_python_oop">
+           Модуль фитнес-трекера</a>
+      </p>
+      <p>
+        <a href="https://github.com/Mike198SPB/character_creation_module.git">
+            Модуль создания персонажа</a>
+      </p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+      <img src="{% static '/img/mme_round.png' %}" />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2>Контакты для связи</h2>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p>Телефон: +7 (921) 569-25-75</p>
+      <p>
+        Почта: <a href="mailto: martynovme@yahoo.com">martynovme@yahoo.com</a>
+      </p>
+      <p>LinkedIn: martynovme</p>
+      <p>Телеграм: @MikhailMartynov</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
